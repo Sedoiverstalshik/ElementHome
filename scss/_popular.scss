@@ -1,0 +1,66 @@
+.popular{
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+  &__title{
+    text-align: left;
+  }
+  &__swiper{
+    width: 100%;
+  }
+  &__swiper-box{
+    @extend .flex-aic-jcsb;
+    position: relative;
+    max-width: 116rem;
+    margin: 0 auto 4.8rem;
+  }
+  &__slide{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    min-width: 26rem;
+    width: 100%;
+    max-height:54.3rem;
+    background: #F9F9F9;
+    border-radius:0.4rem;
+    padding: 3.2rem;
+    transition: all 0.3s linear;
+    &-img{
+      align-self: center;
+      justify-self: center;
+    }
+    &-title{
+      margin-bottom: 0.4rem;
+    }
+    &-desc{
+      font-size: 1.6rem;
+      line-height: 1.5;
+      color: var(--text_color2);
+      margin-bottom: 2.4rem;
+    }
+    &-price{
+      font-size: 2.4rem;
+      line-height: 1.16;
+      color: var(--accent_color);
+      margin-bottom: 2.4rem;
+    }
+    &-color{
+      @extend .flex-aic-start;
+      span{
+        display: block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: 0.2rem;
+      }
+      span + span{
+        margin-left: 0.8rem;
+      }
+    }
+    &:hover .popular__btn{
+      display: block;
+    }
+  }
+  &__btn{
+    display: none;
+    width: 100%;
+    margin-top: 3.2rem;
+  }
+}

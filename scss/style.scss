@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  color:inherit;
+  text-decoration: none;
+}
+img{
+  display: block;
+  object-fit: cover;
+}
+html,
+body{
+  font-size: 10px;
+  font-family: 'Tenor Sans', sans-serif;
+  font-weight: 400;
+  color: var(--text_color);
+}
+.container{
+  max-width: 119rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.btn{
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--btn-text_color);
+  background-color: var( --btn_color);
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  padding: 1.4rem 4rem;
+  transition: color .3s linear, background-color .3s linear;
+  &:hover{
+    color: var(--btn-text_color--hover);
+    background-color: var( --btn_color--hover);
+  }
+  }
+.title{
+  font-weight: 400;
+  font-size: 3.2rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text_color);
+}
+.card__title{
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+  color: var(--text_color);
+}
+
+
+// extend
+.flex-aic-jcsb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column-aic-jcsb{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-aic-start{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@import '_root';
+@import '_header';
+@import '_hero';
+@import '_about';
+@import '_catalog';
+@import '_popular';
+@import '_form';
+@import '_reviews';
+@import '_gallery';
+@import '_partners';
+@import '_footer';
+
+.swiper-button-next::after,
+.swiper-button-prev::after{
+  display: none;
+}
+
+.button__group{
+  width: 8.8rem;
+  height: 4rem;
+}
+.custom__button-prev,
+.custom__button-next{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--accent_color);
+  border-radius: 0.4rem;
+  svg{
+    width: 1.6rem;
+    height: 1.6rem;
+    fill: transparent;
+    path{
+      stroke: var(--accent_color);
+    }
+  }
+}
+.custom__button-prev{
+  left: 0;
+  top: 2.2rem;
+  transform: rotate(-180deg);
+}
+.custom__button-next{
+  right: -5rem;
+  top: 0.4rem;
+}

@@ -1,0 +1,7 @@
+.partners{
+  padding-top: 6rem;
+  margin-bottom: 6rem;
+  &__wrap{
+    @extend .flex-aic-jcsb;
+  }
+}

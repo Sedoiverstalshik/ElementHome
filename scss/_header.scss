@@ -1,0 +1,45 @@
+.header{
+  padding-top: 1.6rem;
+  &__wrap{
+    @extend .flex-aic-jcsb;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+    color: var(--light_color);
+  }
+  &__logo{
+    max-width: 14.3rem;
+      
+  }
+  &__menu-list{
+    @extend .flex-aic-jcsb;
+    li + li{
+      margin-left: 0.8rem;
+    }
+    a{
+      border: 1px solid transparent;
+      border-radius: 10rem;
+      padding: 0.6rem 1rem;
+      transition: border .3s linear;
+    }
+    a:hover{
+      border: 1px solid var(--light_color);
+      border-radius: 10rem;
+      padding: 0.6rem 1rem;
+    }
+  }
+  &__social{
+    @extend .flex-aic-jcsb;
+    .phone{
+      margin-right: 3.2rem;
+    }
+    a + a{
+      margin-right: 1.6rem;
+    }
+    svg{
+      width: 2.4rem;
+      height: 2.4rem;
+      fill: var(--light_color);
+    }
+  }
+}

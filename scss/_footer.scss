@@ -1,0 +1,51 @@
+.footer{
+  padding: 4rem 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: var(--light_color);
+  background: var(--text_color);
+  &__wrap{
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    @extend .flex-aic-jcsb;
+  }
+  &__logo{
+    display: inline-block;
+    fill: var(--light_color);
+    margin-bottom: 1.6rem;
+  }
+  &__copy{
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  p{
+    margin-bottom: 1.6rem;
+    max-width: 27rem;
+  }
+  &__phone{
+    display: inline-block;
+    margin-bottom: 1.6rem;
+  }
+  &__item-link{
+    display:block;
+    margin-bottom: 1.6rem;
+    max-width: 27rem;
+  }
+  &__btn{
+    margin-bottom: 1.6rem;
+  }
+  &__social {
+    @extend .flex-center-center;
+    margin-bottom: 1.6rem;
+    svg{
+    fill: var(--light_color);
+    }
+  }
+  .design{
+    font-size: 1.3rem;
+    line-height: 1.4;
+    a{
+      text-decoration: underline;
+    }
+  }
+}

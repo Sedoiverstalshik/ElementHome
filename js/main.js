@@ -72,3 +72,10 @@ allModals.forEach(function (item) {
 });
 
 
+// burger-menu
+const burgerBtn = document.querySelector('.burger__btn')
+const burgerMenu = document.querySelector('.header__burger-menu')
+
+burgerBtn.addEventListener('click', () => {
+  burgerMenu.classList.toggle('none');
+});

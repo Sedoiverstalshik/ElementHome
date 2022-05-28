@@ -12,20 +12,12 @@ const swiper = new Swiper('.popular__swiper, .reviews__swiper', {
       spaceBetween: 20
     },
   },
-  // Navigation arrows
   navigation: {
     nextEl: '.popular__swiper-next, .swiper-button-next',
     prevEl: '.popular__swiper-prev, .swiper-button-prev',
   },
 });
 
-
-// $('.gallery__img-box').magnificPopup({
-//   type: 'image',
-//   gallery: {
-//     enabled: true
-//   }
-// });
 
 $('.gallery__img-box').magnificPopup({
   delegate: 'a',
@@ -54,10 +46,6 @@ const modalButtons = document.querySelectorAll('[data-modal-button]')
 const modalCloseButton = document.querySelectorAll('[data-modal-close]')
 const allModals = document.querySelectorAll('[data-modal]')
 
-console.log(modalButtons);
-console.log(modalCloseButton);
-console.log(allModals);
-
 modalButtons.forEach(function (item) {
   item.addEventListener('click', function () {
     const modalId = this.dataset.modalButton
@@ -82,3 +70,5 @@ allModals.forEach(function (item) {
     this.classList.add('none');
   });
 });
+
+

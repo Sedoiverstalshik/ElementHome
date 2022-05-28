@@ -8,6 +8,10 @@
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
     @extend .flex-aic-jcsb;
+    flex-wrap: wrap;
+  }
+  &__item{
+    margin-bottom: 3rem;
   }
   &__logo{
     display: inline-block;
@@ -25,11 +29,27 @@
   &__phone{
     display: inline-block;
     margin-bottom: 1.6rem;
+    border-bottom: 1px solid transparent;
+    transition: border .3s linear;
+    &:hover{
+      border-bottom: 1px solid var(--light_color);
+    }
+  }
+  .email{
+    transition: border .3s linear;
+    &:hover{
+      border-bottom: 1px solid var(--light_color);
+    }
   }
   &__item-link{
     display:block;
     margin-bottom: 1.6rem;
-    max-width: 27rem;
+    // max-width: 27rem;
+    border-bottom: 1px solid transparent;
+    transition: border .3s linear;
+    &:hover{
+      border-bottom: 1px solid var(--light_color);
+    }
   }
   &__btn{
     margin-bottom: 1.6rem;
@@ -40,12 +60,28 @@
     svg{
     fill: var(--light_color);
     }
+    a + a{
+      margin-left: 1.6rem;
+    }
+    svg:hover{
+      transform: scale(1.2);
+    }
   }
   .design{
     font-size: 1.3rem;
     line-height: 1.4;
     a{
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width:1000px){
+  .footer{
+    padding-bottom: 0;
+    &__item{
+      text-align: center;
+      margin: 0 auto 5rem;
     }
   }
 }

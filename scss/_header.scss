@@ -8,8 +8,13 @@
     color: var(--light_color);
   }
   &__logo{
-    max-width: 14.3rem;
-      
+    max-width: 14.3rem;  
+  }
+  &__menu{
+    display: block;
+  }
+  &__burger-menu{
+    display: none;
   }
   &__menu-list{
     @extend .flex-aic-jcsb;
@@ -31,15 +36,110 @@
   &__social{
     @extend .flex-aic-jcsb;
     .phone{
+      margin-left: 3.2rem;
       margin-right: 3.2rem;
+      transition: transform 0.2s linear;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
-    a + a{
-      margin-right: 1.6rem;
+    a{
+      margin:0 0.8rem;
     }
     svg{
       width: 2.4rem;
       height: 2.4rem;
       fill: var(--light_color);
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+  }
+  .burger__btn{
+    display: none;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    span{
+      display: block;
+      position: relative;
+      top: 40%;
+      width: 3rem;
+      height: 0.2rem;
+      background-color: var(--light_color);
+      &::after,&::before{
+        content:'';
+        display: block;
+        position: absolute;
+        width: 3rem;
+        height: 0.2rem;
+        background-color: var(--light_color);
+      }
+      &::before{
+        top: -1rem;
+      }
+      &::after{
+        bottom: -1rem;
+      }
+    }
+  }
+}
+
+@media (max-width:1100px) {
+  .header{
+    &__logo{
+      margin-right: 10rem;
+    }
+    &__wrap{
+      flex-wrap: wrap;
+    }
+    &__menu{
+      order: 1;
+      margin: 3rem auto;
+    }
+    .phone{
+      transform: translateX(-50%);
+    }
+  }
+}
+@media (max-width:700px){
+  .header{
+    &__logo{
+      margin-right: 0;
+    }
+    &__logo img{
+      max-width: 10rem;
+    }
+    &__menu{
+      display: none;
+    }
+    &__burger-menu{
+      display: none;
+      text-align: center;
+      position: absolute;
+      top: 2rem;
+      left: 0;
+      padding-top: 5rem;
+      width: 100%;
+      height: 100%;
+      background-color: green;
+      z-index: -1;
+      li + li{
+        margin-top: 1.6rem;
+      }
+    }
+    .social{
+      display: none;
+    }
+    .phone{
+      transform: translateX(-5%);
+    }
+    &__burger-menu .social{
+      display: block;
+      margin-top: 2.4rem;
+    }
+    .burger__btn{
+      display: block;
     }
   }
 }

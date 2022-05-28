@@ -86,4 +86,29 @@
     text-align: center;
     text-decoration: underline;
   }
+  .popup__link{
+    display: contents;
+  }
+}
+
+@media (max-width:1200px){
+  .reviews{
+    margin-bottom: 3rem;
+    &__swiper-box{
+      padding: 0 1.5rem;
+    }
+  }
+}
+@media (max-width:400px){
+  .reviews{
+    &__swiper{
+      max-width: 26rem;
+    }
+    &__swiper-box{
+      padding: 0;
+    }
+    .button__group{
+      display: none;
+    }
+  }
 }

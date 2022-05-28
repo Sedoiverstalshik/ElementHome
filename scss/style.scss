@@ -23,9 +23,12 @@ a{
 img{
   display: block;
   object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
 }
 html,
 body{
+  scroll-behavior: smooth;
   font-size: 10px;
   font-family: 'Tenor Sans', sans-serif;
   font-weight: 400;
@@ -129,6 +132,14 @@ body{
       stroke: var(--accent_color);
     }
   }
+  &:hover{
+    background-color:var(--accent_color) ;
+    svg{
+      path{
+        stroke:var(--light_color) ;
+      }
+    }
+  }
 }
 .custom__button-prev{
   left: 0;
@@ -138,4 +149,92 @@ body{
 .custom__button-next{
   right: -5rem;
   top: 0.4rem;
+}
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F9F9F9;
+  @extend .flex-center-center;
+  z-index: 22;
+}
+.modal__windows{
+  position: relative;
+  max-width: 46rem;
+  max-height: auto;
+  padding: 4.8rem;
+  background-color:var(--light_color) ;
+  border-radius: 0.4rem;
+  .close__btn{
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 3.2rem;
+    height: 3.2rem;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+  }
+}
+.modal__title{
+  font-size: 4rem;
+  line-height: 1.3;
+  text-transform: capitalize;
+  span{
+    display: block;
+    font-size: 1.3rem;
+    text-transform: none;
+  }
+}
+.form__content{
+  @extend .flex-aic-jcsb;
+  margin-bottom: 4.8rem;
+  &-img{
+    width: 189px;
+    height: 115px;
+    object-fit: contain;
+    background: #E9E7DA;
+    padding: 2rem;
+    border-radius: 0.4rem;
+  }
+  &-price{
+    font-size: 2.4rem;
+    line-height: 1.3;
+    color: var(--accent_color);
+    span{
+      display: block;
+      font-size: 1.3rem;
+    }
+  }
+  &-btn{
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 1px solid #BFBFBF;
+    border-radius: 0.4rem;
+    background-color: transparent;
+    cursor: pointer;
+    svg{
+      width: 1.6rem;
+      height: 1.6rem;
+    }
+  }
+  &-quantity{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #000000;
+    margin-bottom: 1.6rem;
+  }
+}
+.none{
+  display: none;
+}
+
+@media (max-width:1000px){
+  .title{
+    font-size: 2.4rem;
+  }
 }

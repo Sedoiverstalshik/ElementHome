@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -25,16 +26,16 @@
         </div>
         <nav class="header__menu menu">
           <ul class="header__menu-list menu__list">
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Каталог </a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#catalog">Каталог </a></li>
             <li><a href="#">партнерам</a></li>
             <li><a href="#">Ткани</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
           </ul>
         </nav>
+        <a class="phone" href="tel:88008008080">8 (800) 800-80-80</a>
         <div class="header__social social">
-          <a class="phone" href="tel:88008008080">8 (800) 800-80-80</a>
           <a href="#">
             <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -54,6 +55,40 @@
             </svg>
           </a>
         </div>
+        <nav class="header__burger-menu menu">
+          <!-- <a class="phone" href="tel:88008008080">8 (800) 800-80-80</a> -->
+          <ul class="header__burger-menu-list menu__list">
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#catalog">Каталог </a></li>
+            <li><a href="#">партнерам</a></li>
+            <li><a href="#">Ткани</a></li>
+            <li><a href="#reviews">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+          <div class="header__social social">
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.3701 2.09408C10.9774 1.76493 8.54634 2.31263 6.52592 3.63604C4.5055 4.95944 3.03214 6.96918 2.3779 9.29414C1.72365 11.6191 1.9327 14.1023 2.96646 16.2851C4.00021 18.468 5.78885 20.2031 8.0021 21.1701C7.94224 20.4019 7.99718 19.6291 8.1651 18.8771C8.3501 18.0381 9.4611 13.4141 9.4611 13.4141C9.23986 12.9182 9.1293 12.38 9.1371 11.8371C9.1371 10.3521 9.9941 9.24408 11.0601 9.24408C11.2516 9.24129 11.4415 9.27977 11.6168 9.35691C11.7921 9.43404 11.9487 9.54802 12.076 9.6911C12.2034 9.83418 12.2984 10.003 12.3547 10.1861C12.4109 10.3691 12.4271 10.5622 12.4021 10.7521C12.4021 11.6521 11.8241 13.0141 11.5221 14.2921C11.4624 14.5265 11.4586 14.7716 11.511 15.0077C11.5635 15.2438 11.6706 15.4643 11.8239 15.6514C11.9771 15.8385 12.1722 15.987 12.3933 16.0849C12.6145 16.1828 12.8555 16.2274 13.0971 16.2151C14.9951 16.2151 16.2671 13.7841 16.2671 10.9141C16.2671 8.71408 14.8101 7.06608 12.1241 7.06608C11.4815 7.04111 10.8405 7.147 10.24 7.37733C9.63958 7.60766 9.09221 7.95762 8.63115 8.40597C8.17008 8.85431 7.80495 9.39168 7.55792 9.98545C7.31089 10.5792 7.18711 11.217 7.1941 11.8601C7.16546 12.5734 7.3956 13.273 7.8421 13.8301C7.92553 13.8924 7.98645 13.9801 8.01567 14.08C8.04489 14.1799 8.04083 14.2867 8.0041 14.3841C7.9581 14.5681 7.8421 15.0071 7.7961 15.1681C7.78653 15.2227 7.76427 15.2743 7.73112 15.3187C7.69797 15.3631 7.65484 15.3991 7.60523 15.4238C7.55561 15.4486 7.50088 15.4613 7.44545 15.461C7.39002 15.4607 7.33544 15.4473 7.2861 15.4221C5.9021 14.8681 5.2501 13.3451 5.2501 11.6061C5.2501 8.75908 7.6341 5.35108 12.4041 5.35108C16.2001 5.35108 18.7241 8.12808 18.7241 11.0981C18.7241 15.0071 16.5471 17.9461 13.3301 17.9461C12.8493 17.9614 12.3724 17.8553 11.9434 17.6375C11.5145 17.4198 11.1474 17.0973 10.8761 16.7001C10.8761 16.7001 10.2981 19.0161 10.1841 19.4541C9.95139 20.2108 9.608 20.9289 9.1651 21.5851C10.0881 21.8651 11.0471 22.0051 12.0111 22.0011C13.3247 22.0021 14.6256 21.7441 15.8393 21.2417C17.053 20.7392 18.1556 20.0024 19.0842 19.0732C20.0127 18.144 20.7488 17.0408 21.2504 15.8268C21.7519 14.6127 22.0091 13.3117 22.0071 11.9981C22.0059 9.58308 21.1309 7.25007 19.5437 5.42986C17.9566 3.60964 15.7644 2.42514 13.3721 2.09508L13.3701 2.09408Z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z" />
+              </svg>
+            </a>
+            <a href="#">
+              <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 2C14.717 2 15.056 2.01 16.122 2.06C17.187 2.11 17.912 2.277 18.55 2.525C19.21 2.779 19.766 3.123 20.322 3.678C20.8305 4.1779 21.224 4.78259 21.475 5.45C21.722 6.087 21.89 6.813 21.94 7.878C21.987 8.944 22 9.283 22 12C22 14.717 21.99 15.056 21.94 16.122C21.89 17.187 21.722 17.912 21.475 18.55C21.2247 19.2178 20.8311 19.8226 20.322 20.322C19.822 20.8303 19.2173 21.2238 18.55 21.475C17.913 21.722 17.187 21.89 16.122 21.94C15.056 21.987 14.717 22 12 22C9.283 22 8.944 21.99 7.878 21.94C6.813 21.89 6.088 21.722 5.45 21.475C4.78233 21.2245 4.17753 20.8309 3.678 20.322C3.16941 19.8222 2.77593 19.2175 2.525 18.55C2.277 17.913 2.11 17.187 2.06 16.122C2.013 15.056 2 14.717 2 12C2 9.283 2.01 8.944 2.06 7.878C2.11 6.812 2.277 6.088 2.525 5.45C2.77524 4.78218 3.1688 4.17732 3.678 3.678C4.17767 3.16923 4.78243 2.77573 5.45 2.525C6.088 2.277 6.812 2.11 7.878 2.06C8.944 2.013 9.283 2 12 2ZM12 7C10.6739 7 9.40215 7.52678 8.46447 8.46447C7.52678 9.40215 7 10.6739 7 12C7 13.3261 7.52678 14.5979 8.46447 15.5355C9.40215 16.4732 10.6739 17 12 17C13.3261 17 14.5979 16.4732 15.5355 15.5355C16.4732 14.5979 17 13.3261 17 12C17 10.6739 16.4732 9.40215 15.5355 8.46447C14.5979 7.52678 13.3261 7 12 7ZM18.5 6.75C18.5 6.41848 18.3683 6.10054 18.1339 5.86612C17.8995 5.6317 17.5815 5.5 17.25 5.5C16.9185 5.5 16.6005 5.6317 16.3661 5.86612C16.1317 6.10054 16 6.41848 16 6.75C16 7.08152 16.1317 7.39946 16.3661 7.63388C16.6005 7.8683 16.9185 8 17.25 8C17.5815 8 17.8995 7.8683 18.1339 7.63388C18.3683 7.39946 18.5 7.08152 18.5 6.75ZM12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12C15 12.7956 14.6839 13.5587 14.1213 14.1213C13.5587 14.6839 12.7956 15 12 15C11.2044 15 10.4413 14.6839 9.87868 14.1213C9.31607 13.5587 9 12.7956 9 12C9 11.2044 9.31607 10.4413 9.87868 9.87868C10.4413 9.31607 11.2044 9 12 9Z" />
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <div class="burger__btn">
+          <span></span>
+        </div>
       </div>
     </div>
     <!-- /.container -->
@@ -64,12 +99,12 @@
         <div class="hero__wrap">
           <h1 class="hero__title">красивая Мебель для красивой жизни</h1>
           <p class="hero__desc">Дизайнерский талант мирового класса в сочетании с высочайшим качеством</p>
-          <a href="#" class="hero__btn btn">Заказать</a>
+          <a href="#" class="hero__btn btn" data-modal-button="modal_2">Заказать</a>
         </div>
       </div>
       <!-- /.container -->
     </section>
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="about__wrap">
           <img src="images/about.jpg" width="560" height="620" alt="Фото девушек на диване" class="about__img">
@@ -85,7 +120,7 @@
       </div>
       <!-- /.container -->
     </section>
-    <section class="catalog">
+    <section id="catalog" class="catalog">
       <div class="container">
         <div class="catalog__wrap">
           <div class="catalog__top">
@@ -237,7 +272,7 @@
         <!-- <h2 class="popular__title title">Каталог</h2> -->
         <div class="popular__swiper swiper">
           <div class="popular__swiper-box">
-            <h2 class="popular__title title">Каталог</h2>
+            <h2 class="popular__title title">Популярное</h2>
             <div class="button__group">
               <div class="custom__button-prev swiper-button-prev">
                 <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -265,10 +300,10 @@
                   <span style="background: #BFBFBF;"></span>
                   <span style="background: #F0F0F0;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_2.webp" width="109" height="100" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
@@ -282,10 +317,10 @@
                   <span style="background:  #C5CDD6;"></span>
                   <span style="background: #E84025;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_3.webp" width="196" height="196" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
@@ -296,10 +331,10 @@
                   <span style="background: #A69E98;"></span>
                   <span style="background:  #2D3F74;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_4.webp" width="196" height="196" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
@@ -312,55 +347,56 @@
                   <span style="background:  #616161;"></span>
                   <span style="background:  #3F3934;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_5.webp" width="196" height="196" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
                 <h4 class="popular__slide-title card__title">Colour Cushion</h4>
-                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </p>
                 <p class="popular__slide-price">70,00 €</p>
                 <div class="popular__slide-color">
                   <span style="background: #A69E98;"></span>
                   <span style="background: #2D3F74;"></span>
                   <span style="background: #C8CC46;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_6.webp" width="196" height="196" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
                 <h4 class="popular__slide-title card__title">Nota</h4>
-                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing
+                  elit</p>
                 <p class="popular__slide-price">3 790,00 €</p>
                 <div class="popular__slide-color">
                   <span style="background: #A69E98;"></span>
                   <span style="background: #2D3F74;"></span>
                   <span style="background: #7D4D29;"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
-            <div class="popular__slide swiper-slide">
+            <div class=" popular__slide swiper-slide">
               <img src="images/Популярное/popular_7.webp" width="196" height="196" alt="Фото дивана"
                 class="popular__slide-img">
               <div class="popular__slide-box">
                 <h4 class="popular__slide-title card__title">Dutch Tile</h4>
-                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <p class="popular__slide-desc">Lorem ipsum dolor sit amet, consectetur
+                  adipiscing elit</p>
                 <p class="popular__slide-price">2 410,00 €</p>
                 <div class="popular__slide-color">
                   <span style="background: linear-gradient(#fff,#000)"></span>
                 </div>
-                <a href="#" class="popular__btn btn">Заказать</a>
+                <a href="#" class="popular__btn btn" data-modal-button="modal_2">Заказать</a>
               </div>
             </div>
           </div>
-          <div class="popular__swiper-prev swiper-button-prev"></div>
-          <div class="popular__swiper-next swiper-button-next"></div>
         </div>
       </div>
     </section>
@@ -380,7 +416,7 @@
         <img src="images/form_img.jpg" width="500" height="608" alt="" class="form__img">
       </div>
     </section>
-    <section class="reviews">
+    <section id="reviews" class="reviews">
       <div class="reviews__wrap">
         <div class="reviews__swiper swiper">
           <div class="reviews__swiper-box">
@@ -413,15 +449,20 @@
                 <h5 class="reviews__slide-name">Лилия</h5>
               </div>
             </div>
+
+
             <div class="reviews__swiper-slide reviews__swiper-slide2 swiper-slide">
-              <img src="images/Отзывы/reviews_2.webp" width="260" height="423" alt="Фото пользователя"
-                class="reviews__slider-img-big">
-              <button class="reviews__slide-play" type="button">
-                <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.3998 8.00005L0.799805 15.2L0.799805 0.800049L13.3998 8.00005Z" />
-                </svg>
-              </button>
+              <a class="popup__link" href="https://www.youtube.com/watch?v=GkPcFcQg8Bo">
+                <img src="images/Отзывы/reviews_2.webp" width="260" height="423" alt="Фото пользователя"
+                  class="reviews__slider-img-big">
+                <button class="reviews__slide-play" type="button">
+                  <svg width="14" height="16" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.3998 8.00005L0.799805 15.2L0.799805 0.800049L13.3998 8.00005Z" />
+                  </svg>
+                </button>
+              </a>
             </div>
+
             <div class="reviews__swiper-slide reviews__swiper-slide3 swiper-slide">
               <div class="reviews__slide-top">
                 <h4 class="reviews__slide-title">Сотрудничаю с «Element Home» уже давно</h4>
@@ -498,18 +539,42 @@
         </div>
         <!-- /.gallery__top -->
         <div class="gallery__img-box">
-          <img src="images/Галлерея/gallery_1.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_2.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_3.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_4.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_5.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_6.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_7.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_8.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_9.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_10.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_11.webp" width="300" height="300" alt="Фото" class="gallery__img">
-          <img src="images/Галлерея/gallery_12.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          <a href="images/gallery/gallery_1.webp">
+            <img src="images/gallery/gallery_1.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_2.webp">
+            <img src="images/gallery/gallery_2.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_3.webp">
+            <img src="images/gallery/gallery_3.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_4.webp">
+            <img src="images/gallery/gallery_4.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_5.webp">
+            <img src="images/gallery/gallery_5.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_6.webp">
+            <img src="images/gallery/gallery_6.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_7.webp">
+            <img src="images/gallery/gallery_7.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_8.webp">
+            <img src="images/gallery/gallery_8.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_9.webp">
+            <img src="images/gallery/gallery_9.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_10.webp">
+            <img src="images/gallery/gallery_10.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_11.webp">
+            <img src="images/gallery/gallery_11.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
+          <a href="images/gallery/gallery_12.webp">
+            <img src="images/gallery/gallery_12.webp" width="300" height="300" alt="Фото" class="gallery__img">
+          </a>
         </div>
       </div>
       <!-- /.gallery__wrap -->
@@ -535,7 +600,7 @@
     </div>
     <!-- /.partners -->
   </main>
-  <footer class="footer">
+  <footer id="contact" class="footer">
     <div class="container">
       <div class="footer__wrap">
         <div class="footer__item">
@@ -586,7 +651,7 @@
           <a class="footer__item-link" href="#">Реквизиты</a>
         </div>
         <div class="footer__item">
-          <a href="#" class="footer__btn btn">Обратный звонок</a>
+          <a href="#" class="footer__btn btn" data-modal-button="modal_1">Обратный звонок</a>
           <div class="footer__social social">
             <a href="#">
               <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -614,6 +679,73 @@
     <!-- /.container -->
   </footer>
 
+  <div id="modal_1" class="modal none" data-modal>
+    <form class="modal__windows">
+      <button class="close__btn" type="button" data-modal-close>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M23.6095 10.3567C24.1302 9.83601 24.1302 8.99179 23.6095 8.47109C23.0888 7.95039 22.2446 7.95039 21.7239 8.47109L16 14.1949L10.2761 8.47109C9.75544 7.95039 8.91122 7.95039 8.39052 8.47109C7.86983 8.99179 7.86983 9.83601 8.39052 10.3567L14.1144 16.0806L8.39052 21.8044C7.86983 22.3251 7.86983 23.1693 8.39052 23.69C8.91122 24.2107 9.75544 24.2107 10.2761 23.69L16 17.9662L21.7239 23.69C22.2446 24.2107 23.0888 24.2107 23.6095 23.69C24.1302 23.1693 24.1302 22.3251 23.6095 21.8044L17.8856 16.0806L23.6095 10.3567Z"
+            fill="#BFBFBF" />
+        </svg>
+      </button>
+      <h3 class="form__title">Нужна наша консультация?</h3>
+      <p class="form__desc">Оставьте свои контактные данные и наш менеджер свяжется с вами в ближайшее время</p>
+      <input class="form__input" type="text" placeholder="Имя">
+      <input class="form__input" type="tel" placeholder="Телефон">
+      <input class="form__input" type="email" placeholder="E-mail">
+      <button class="form__btn btn" type="submit">Отправить</button>
+      <div class="form__text">
+        Оставляя заявку, вы принимаете условия <a href="#">соглашения об обработке персональных данных</a>
+      </div>
+    </form>
+  </div>
+  <div id="modal_2" class="modal none" data-modal>
+    <form class="modal__windows">
+      <button class="close__btn" type="button" data-modal-close>
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M23.6095 10.3567C24.1302 9.83601 24.1302 8.99179 23.6095 8.47109C23.0888 7.95039 22.2446 7.95039 21.7239 8.47109L16 14.1949L10.2761 8.47109C9.75544 7.95039 8.91122 7.95039 8.39052 8.47109C7.86983 8.99179 7.86983 9.83601 8.39052 10.3567L14.1144 16.0806L8.39052 21.8044C7.86983 22.3251 7.86983 23.1693 8.39052 23.69C8.91122 24.2107 9.75544 24.2107 10.2761 23.69L16 17.9662L21.7239 23.69C22.2446 24.2107 23.0888 24.2107 23.6095 23.69C24.1302 23.1693 24.1302 22.3251 23.6095 21.8044L17.8856 16.0806L23.6095 10.3567Z"
+            fill="#BFBFBF" />
+        </svg>
+      </button>
+      <h3 class="form__title modal__title"><span>Модульный диван</span>Element One</h3>
+      <div class="form__content">
+        <img src="images/Каталог/catalog_1.webp" width="189" height="115" alt="Фотодивана" class="form__content-img">
+        <div class="form__content-box">
+          <div class="form__content-quantity">
+            <button class="form__content-btn" type="button">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 8.5H12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            1 шт.
+            <button class="form__content-btn" type="button">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 8.5H12" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M8 12.5V4.5" stroke="#292D32" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+          </div>
+          <p class="form__content-price"><span>Итого:</span>
+            120 000 руб.
+          </p>
+        </div>
+      </div>
+      <input class="form__input" type="text" placeholder="Имя">
+      <input class="form__input" type="tel" placeholder="Телефон">
+      <input class="form__input" type="email" placeholder="E-mail">
+      <button class="form__btn btn" type="submit">Отправить</button>
+      <div class="form__text">
+        Оставляя заявку, вы принимаете условия <a href="#">соглашения об обработке персональных данных</a>
+      </div>
+    </form>
+  </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
 </body>

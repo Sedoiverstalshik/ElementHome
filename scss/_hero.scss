@@ -1,5 +1,5 @@
 .hero{
-  background-image: url(../images/main_bg.png);
+  background-image: url(../images/main_bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -7,7 +7,7 @@
   margin-top: -80px;
   margin-bottom: 6rem;
   &__wrap{
-    padding-top: 28%;
+    padding-top: 15rem;
     text-align: center;
   }
   &__title{
@@ -28,5 +28,29 @@
     color:var(--light_color);
     max-width: 47.7rem;
     margin:0 auto 4rem;
+  }
+}
+
+@media (max-width:1100px){
+  .hero{
+    margin-top: -15rem;
+  }
+}
+@media (max-width:700px){
+  .hero{
+    margin-top: -6rem;
+    &__title{
+      font-size: 3rem;
+    }
+    &__desc{
+      font-size: 1.6rem;
+    }
+  }
+}
+@media (max-width:500px){
+  .hero{
+    &__wrap{
+      padding-top: 10rem;
+    }
   }
 }

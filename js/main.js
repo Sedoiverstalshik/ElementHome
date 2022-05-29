@@ -75,7 +75,14 @@ allModals.forEach(function (item) {
 // burger-menu
 const burgerBtn = document.querySelector('.burger__btn')
 const burgerMenu = document.querySelector('.header__burger-menu')
-
+const burgerClose = document.querySelectorAll('.header__burger-menu a')
+//при нажатии кнопки открывает и закрывает меню
 burgerBtn.addEventListener('click', () => {
   burgerMenu.classList.toggle('none');
+});
+//при нажатии на пункт меню или соц сеть закрывает меню
+burgerClose.forEach(function (item) {
+  item.addEventListener('click', function () {
+    burgerMenu.classList.add('none');
+  });
 });
